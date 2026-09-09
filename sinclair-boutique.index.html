@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinclair Boutique | Catálogo Premium</title>
+    
+    <style>
+        /* DISEÑO ELEGANTE (Modo Oscuro con Dorado) */
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            background-color: #121212; /* Fondo negro elegante */
+            margin: 0; 
+            padding: 15px; 
+            color: #f0f0f0; /* Letras casi blancas */
+        }
+        
+        .container { 
+            max-width: 450px; 
+            margin: 0 auto; 
+            background: #1e1e1e; /* Gris muy oscuro para la tarjeta */
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            padding: 30px 20px; 
+            border: 1px solid #333;
+        }
+        
+        .header { text-align: center; margin-bottom: 25px; }
+        .logo { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            margin-bottom: 15px; 
+            border: 3px solid #d4af37; /* Borde dorado elegante */
+        }
+        h1 { font-size: 26px; margin: 0 0 5px 0; color: #ffffff; letter-spacing: 1px; }
+        p.desc { color: #aaaaaa; font-size: 15px; margin-top: 0; font-style: italic; }
+        
+        /* Botón de WhatsApp - Ajustado al diseño oscuro */
+        .btn-wa { 
+            display: block; 
+            background: #d4af37; /* Color dorado */
+            color: #121212; /* Texto oscuro para contrastar */
+            text-align: center; 
+            padding: 16px; 
+            border-radius: 30px; /* Bordes muy redondos, más modernos */
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 16px;
+            margin-bottom: 35px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .catalog h2 { 
+            font-size: 18px; 
+            border-bottom: 1px solid #333; 
+            padding-bottom: 10px; 
+            margin-bottom: 20px; 
+            color: #d4af37; /* Dorado */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        
+        .grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 15px; 
+            margin-bottom: 35px; 
+        }
+        
+        .item { 
+            background: #252525;
+            border: 1px solid #333; 
+            border-radius: 10px; 
+            padding: 10px; 
+            text-align: center; 
+        }
+        .item img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 8px; 
+            margin-bottom: 10px; 
+            object-fit: cover; 
+            aspect-ratio: 1/1; 
+        }
+        .item h3 { font-size: 14px; margin: 0 0 8px 0; color: #fff; font-weight: normal; }
+        .item .price { color: #d4af37; font-weight: bold; font-size: 16px; }
+        
+        /* Sección de Pagos y Botones de Copiar */
+        .payment { 
+            background: #1a1a1a; 
+            padding: 25px 20px; 
+            border-radius: 12px; 
+            font-size: 15px; 
+            border: 1px solid #333;
+        }
+        .payment h3 { font-size: 16px; margin-top: 0; margin-bottom: 15px; color: #ffffff; text-align: center; }
+        
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+            padding: 10px 0;
+        }
+        .data-row:last-child { border-bottom: none; }
+        
+        /* Diseño del botoncito de copiar */
+        .btn-copy {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <img src="https://i.ibb.co/h0xw1bY/Sinclair-Boutique-20260811-175033.jpg" alt="Logo Sinclair Boutique" class="logo">
+            <h1>SINCLAIR BOUTIQUE</h1>
+            <p class="desc">Estilo y exclusividad</p>
+        </div>
+
+        <a href="https://wa.me/529992438223?text=Hola,%20me%20interesa%20un%20artículo%20del%20catálogo" class="btn-wa">
+            📲 Enviar Mensaje
+        </a>
+
+        <div class="catalog">
+            <h2>Colección Actual</h2>
+            <div class="grid">
+                <div class="item">
+                    <img src="https://i.ibb.co/pjtctNv9/IMG-20260909-104535.jpg" alt="Producto 1">
+                    <h3>Bolsa Loewe</h3>
+                    <span class="price">$500</span>
+                </div>
+                <div class="item">
+                    <img src="https://i.ibb.co/Zz4B33jd/IMG-20260909-104418.jpg" alt="Producto 2">
+                    <h3>Bolsa Lacoste</h3>
+                    <span class="price">$570</span>
+                </div>
+                <div class="item">
+                    <img src="https://i.ibb.co/8DDkJwwZ/IMG-20260909-104324.jpg" alt="Producto 3">
+                    <h3>Crossbody Coach</h3>
+                    <span class="price">$570</span>
+                </div>
+                <div class="item">
+                    <img src="https://i.ibb.co/qLGgwVVD/IMG-20260909-104233.jpg" alt="Producto 4">
+                    <h3>lentes de Diseñador</h3>
+                    <span class="price">$380</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment">
+            <h3>💳 Datos para Transferencia</h3>
+            
+            <div class="data-row">
+                <span><strong>Banco:</strong> BBVA</span>
+            </div>
+            
+            <div class="data-row">
+                <span><strong>Titular:</strong> Sergio Zaldivar</span>
+            </div>
+            
+            <div class="data-row">
+                <div><strong>Tarjeta:</strong><br><span style="letter-spacing: 1px;">4152 3146 4966 4979</span></div>
+                <!-- Al tocar aquí, JavaScript copia el número de tarjeta -->
+                <button class="btn-copy" onclick="copiarTexto('4152314649664979', this)">📋 Copiar</button>
+            </div>
+            
+            <div class="data-row">
+                <div><strong>CLABE:</strong><br><span style="letter-spacing: 1px;">012910 015374051353</span></div>
+                <!-- Al tocar aquí, JavaScript copia la CLABE -->
+                <button class="btn-copy" onclick="copiarTexto('012910015374051353', this)">📋 Copiar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- AQUÍ EMPIEZA LA MAGIA DE JAVASCRIPT -->
+    <script>
+        // Esta función recibe el número a copiar y el botón que el usuario tocó
+        function copiarTexto(texto, boton) {
+            navigator.clipboard.writeText(texto).then(() => {
+                // Cambia el texto del botón temporalmente para avisar que sí se copió
+                let textoOriginal = boton.innerText;
+                boton.innerText = "¡Copiado!";
+                boton.style.background = "#d4af37";
+                boton.style.color = "#121212";
+                
+                // Después de 2 segundos, regresa a la normalidad
+                setTimeout(() => { 
+                    boton.innerText = textoOriginal;
+                    boton.style.background = "#333";
+                    boton.style.color = "#fff";
+                }, 2000);
+            });
+        }
+    </script>
+
+</body>
+</html>
